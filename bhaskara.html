@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Bhaskara</title>
+		<script language="javascript">
+			
+			var a, b, c, x1, x2, x, delta, escolha;
+			document.write("Cálculo de Equação de 2° Grau <br>");
+			
+			a=parseFloat (prompt("Considerando a equação 'aX²+bx+c=0', insira o valor de 'a': ",""));
+			b=parseFloat (prompt("Considerando a equação 'aX²+bx+c=0', insira o valor de 'b': ",""));
+			c=parseFloat (prompt("Considerando a equação 'aX²+bx+c=0', insira o valor de 'c': ",""));
+			
+				
+			
+			delta = Math.pow(b,2) - 4*a*c
+			
+			if (delta<0)
+			{
+				document.write("Não tem raiz <br>")
+			}
+			if (delta>0)
+			{
+					x1=(-b+ Math.sqrt(delta)/2*a);
+					x2=(-b- Math.sqrt(delta)/2*a);
+					document.write("x1 = ",x1,"<br> x2 =",x2);
+			}
+
+			if(delta == 0)
+			{
+				x=(-b/(2*a));
+
+				document.write("O valor de x é ",x);
+			}
+			
+			
+			
+		</script>
+	</head>
+	<body>
+
+	</body>
+<html>
